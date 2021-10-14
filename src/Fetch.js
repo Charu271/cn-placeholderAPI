@@ -11,7 +11,6 @@ class Fetch extends Component {
     fetch("https://jsonplaceholder.typicode.com/photos/?_limit=50")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         this.setState({ data: data });
       })
       .catch((err) => console.log(err));
